@@ -1,0 +1,26 @@
+
+#photo {
+  display: block;
+}
+
+@media (max-width: 1000px) {
+  #photo {
+    display: none;
+  }
+}
+
+.photo {
+  margin-top: 22px;
+  float: left;
+}
+
+.name {
+  text-align: center;
+  cursor: default;
+  user-select: none;
+}
+
+.about {
+  text-align: center;
+  font-size: 20px;
+}
