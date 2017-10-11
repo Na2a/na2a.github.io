@@ -1,63 +1,24 @@
-
-/*
-* {
-  border: 1px red solid;
-}
-*/
-
-#photo {
-  display: block;
-}
-
-@media (max-width: 1000px) {
-  #photo {
-    display: none;
-  }
-}
-
-.photo {
-  margin-top: 22px;
-  float: left;
-}
-
-.name {
-  text-align: center;
-  cursor: default;
-  user-select: none;
-}
-
-.about {
-  text-align: left;
-  color: black;
-}
-
-/* Style all font awesome icons */
-
 a.fa {
   text-decoration: none;
+  font-size: 20px;
 }
 
 .fa {
   text-align: center;
   text-decoration: none;
   color:black;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 30px;
-  width: 40px;
+  margin-top: 0px;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  width: 50px;
   text-align: center;
   text-decoration: none;
-  -o-transition:.3s;
-  -ms-transition:.3s;
-  -moz-transition:.3s;
-  -webkit-transition:.3s;
-  transition: .3s;
+  color: black;
 }
 
 /* Add a hover effect if you want */
 
 .fa:hover {
-  background: black;
-  color:white;
+  //background: black;
+  color: red;
 }
-

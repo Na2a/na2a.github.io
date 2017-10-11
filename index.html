@@ -1,48 +1,87 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <style>
+    * {
+      //border: 1px solid red;
+      //font-family: 'Ubuntu', sans-serif;
+    }
+    </style>
   </head>
-  <body>
+  <body class = "w3-light-grey">
 
-    <div class="container">
-      <div class="row">
-        
-        <div class="col-md-6 col-md-offset-2">
-          <div class="row name">
-            <h1>Nazarbek Altybay<br><small>software engineer</small></h1>
+    <div class = "w3-content w3-margin-top" style = "max-width:1000px">
+
+      <!-- Header -->
+      <header class="w3-container w3-center">
+        <div class="w3-container">
+          <h1 class="w3-border-bottom" style="margin-top: 0px; margin-bottom: 0px;">Nazarbek Altybay</h1>
+          <div class="w3-container" style="margin-top: 0px; padding-top">
+            <a target="_blank" href="mailto:nazarbek.altybay@gmail.com" title="mail me" class="fa-envelope-o fa"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/nazarbek/" title="linkedin" class="fa fa-linkedin"></a>
+            <a target="_blank" href="https://github.com/Na2a" title="github" class="fa fa-github"></a>
+            <a target="_blank" href="https://www.facebook.com/nazarbek.altybay" title="facebook" class="fa fa-facebook"></a>
+            <a target="_blank" href="https://vk.com/na2aaa" title="vk" class="fa fa-vk"></a>
+            <a target="_blank" href="https://instagram.com/nazarbek.altybay" title="instagram" class="fa fa-instagram"></a>
+            <a target="_blank" href="https://telegram.me/NazarbekAltybay" title="telegram" class="fa fa-paper-plane"></a>
           </div>
-          <hr>
-          <div class="row">
-            <p class="about">Welcome! I am <b>Na2a</b> and I love programming. <br>Back in highschool, I was representing my home country Kazakhstan in various programming competitions. Currently, I am sophomore student in <abbr title="Ulsan National Institute in Science and Technology">UNIST</abbr>, studying Computer Science.</p>
+        </div>
+      </header>
+
+      <div class = "w3-row">
+
+        <div class = "w3-border w3-margin w3-white">
+          <div class="w3-bar ">
+            <a href = "javascript:void(0)" class="w3-button w3-third w3-hover-light-grey w3-bottombar w3-padding w3-border-red tablink" onclick="openTab(event, 'about')">About me</a>
+            <a href = "javascript:void(0)" class="w3-button w3-third w3-hover-light-grey w3-bottombar w3-padding tablink" onclick="openTab(event, 'projects')">Projects</a>
+            <a href = "javascript:void(0)" class="w3-button w3-third w3-hover-light-grey w3-bottombar w3-padding tablink" onclick="openTab(event, 'someshit')">Other shit</a>
           </div>
-        </div>
-        
-        <div class="col-md-3" id="photo">
-          <img class="photo img-responsive img-rounded" src="http://placehold.it/222x296" alt="photo"></img>
-        </div>
+          <div id="about" class="w3-container tab-block">
+            <p>
+              Welcome! <br> I am Na2a and I love programming. Back in highschool,
+              I was representing my home country Kazakhstan in various programming competitions.
+              Currently, I am sophomore student in UNIST, studying Computer Science.
+            </p>
+          </div>
 
-      </div>
-      <div class="row">
-        <div class="col-md-9 col-md-offset-2">
-          <h2 align="left">Find me on...</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-9 col-md-offset-2">
+          <div id="projects" class="w3-container tab-block" style="display:none">
+            <p>
+              Asdasd
+            </p>
+          </div>
 
-          <a target="_blank" href="mailto:nazarbek.altybay@gmail.com" title="mail me" class="fa fa-envelope-o"></a>
-          <a target="_blank" href="https://www.linkedin.com/in/nazarbek/" title="linkedin" class="fa fa-linkedin"></a>
-          <a target="_blank" href="https://github.com/Na2a" title="github" class="fa fa-github"></a>
-          <a target="_blank" href="https://www.facebook.com/nazarbek.altybay" title="facebook" class="fa fa-facebook"></a>
-          <a target="_blank" href="https://vk.com/na2aaa" title="vk" class="fa fa-vk"></a>
-          <a target="_blank" href="https://instagram.com/nazarbek.altybay" title="instagram" class="fa fa-instagram"></a>
-          <a target="_blank" href="https://telegram.me/NazarbekAltybay" title="telegram" class="fa fa-paper-plane"></a>
-          
+          <div id="someshit" class="w3-container tab-block" style="display:none">
+            <p>
+              Cool
+            </p>
+          </div>
+
+          <!--SCRIPT COMES IN-->
+          <script>
+            function openTab(evt, cityName) {
+              var i, x, tablinks;
+              x = document.getElementsByClassName("tab-block");
+              for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablink");
+              for (i = 0; i < tablinks.length; i++) {
+                  tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
+              }
+              document.getElementById(cityName).style.display = "block";
+              evt.currentTarget.className += " w3-border-red";
+            }
+          </script>
+
         </div>
       </div>
+
+
     </div>
+
   </body>
 </html>
