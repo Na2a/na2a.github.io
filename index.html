@@ -14,7 +14,7 @@
     }
     </style>
   </head>
-  <body class = "w3-light-grey">
+  <body style="background-color: 	rgb(250, 250, 250);">
 
     <div class = "w3-content w3-margin-top" style = "max-width:1000px">
 
@@ -36,18 +36,26 @@
 
       <div class = "w3-row">
 
-        <div class = "w3-border w3-margin w3-white">
-          <div class="w3-bar ">
-            <a href = "javascript:void(0)" class="w3-button w3-third w3-hover-light-grey w3-bottombar w3-padding w3-border-red tablink" onclick="openTab(event, 'about')">About me</a>
-            <a href = "javascript:void(0)" class="w3-button w3-third w3-hover-light-grey w3-bottombar w3-padding tablink" onclick="openTab(event, 'projects')">Projects</a>
-            <a href = "javascript:void(0)" class="w3-button w3-third w3-hover-light-grey w3-bottombar w3-padding tablink" onclick="openTab(event, 'someshit')">Other shit</a>
+        <div class = "w3-border w3-margin w3-white" style="padding-bottom: 20px;">
+          <div class="w3-bar">
+            <a href = "javascript:void(0)" class="w3-button w3-half w3-hover-light-grey w3-bottombar w3-padding w3-border-red tablink" onclick="openTab(event, 'about')">About me</a>
+            <!--<a href = "javascript:void(0)" class="w3-button w3-third w3-hover-light-grey w3-bottombar w3-padding tablink" onclick="openTab(event, 'projects')">Projects</a>-->
+            <a href = "javascript:void(0)" class="w3-button w3-half w3-hover-light-grey w3-bottombar w3-padding tablink" onclick="openTab(event, 'blog')">Blog</a>
           </div>
           <div id="about" class="w3-container tab-block">
-            <p>
-              Welcome! <br> I am Na2a and I love programming. Back in highschool,
-              I was representing my home country Kazakhstan in various programming competitions.
-              Currently, I am sophomore student in UNIST, studying Computer Science.
-            </p>
+            <img class = "w3-image w3-border w3-left w3-margin-right w3-margin-top" style="max-width: 200px;" src = "http://savepic.net/10145871.jpg"/>
+            <div class="">
+              <h3>Welcome!</h3>
+              <p>
+                My name is Nazarbek, I often use the nickname Na2a.
+                <br><br>Currently - sophomore
+                student of Ulsan National Institute of Science and Technology (South Korea).
+                <br>In the past - actively participated in programming competitions and represented
+                home country in International Olympiad in Informatics.
+                <br><br>On this website, I am going
+                to keep the information about me.
+              </p>
+            </div>
           </div>
 
           <div id="projects" class="w3-container tab-block" style="display:none">
@@ -56,9 +64,9 @@
             </p>
           </div>
 
-          <div id="someshit" class="w3-container tab-block" style="display:none">
+          <div id="blog" class="w3-container tab-block" style="display:none">
             <p>
-              Cool
+              Coming soon...
             </p>
           </div>
 
